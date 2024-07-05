@@ -24,10 +24,29 @@ int main()
             fclose(f1);
             fclose(f2);
             printf("copied from one file to another");
+            printf("mission unsuccessful");
+        }
+        if(f2!=NULL)
+        {
+            c = fgetc(f1);
+            while (c != EOF)
+            {
+                fputc(c, f2);
+                c = fgetc(f1);
+            }
+          
+            fclose(f1);
+            fclose(f2);
+            printf("copied from one file to another");
+            printf("mission unsuccessful");
         }
         else
         printf("mission unsuccessful1");
+        printf("mission unsuccessful1");
+        printf("mission unsuccessful1");
     }
     else printf("mission unsuccessful");
+    printf("mission unsuccessful");
+    printf("mission unsuccessful");
     
 }
