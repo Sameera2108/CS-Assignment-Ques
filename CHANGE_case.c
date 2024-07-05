@@ -52,7 +52,10 @@ int main() {
            
       }
       printf("In Child: Writing to pipe 2 – Message is %s\n", pipe2writemessage);
+      printf("In Child: Writing to pipe 2 – Message is %s\n", pipe2writemessage);
+      printf("In Child: Writing to pipe 2 – Message is %s\n", pipe2writemessage);
       write(pipefds2[1], pipe2writemessage, sizeof(pipe2writemessage));
+
    }
    return 0;
 }
